@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>css弹性盒</title>
+    <link href="/2022/06/19/css%E5%BC%B9%E6%80%A7%E7%9B%92/"/>
+    <url>/2022/06/19/css%E5%BC%B9%E6%80%A7%E7%9B%92/</url>
+    
+    <content type="html"><![CDATA[<h1 id="css弹性盒"><a href="#css弹性盒" class="headerlink" title="css弹性盒"></a>css弹性盒</h1><h3 id="以下属性写在父元素里"><a href="#以下属性写在父元素里" class="headerlink" title="以下属性写在父元素里"></a><strong>以下属性写在父元素里</strong></h3><p><strong>怪异盒模型</strong> </p><p><strong>box-sizing</strong>:border-box;</p><p>写边框和padding值 宽高不变</p><p>宽高保持不变 边框和padding加到了盒子里面 最终content区域变小</p><p>box-sizing:content-box;</p><p>转化为默认效果  普通盒模型</p><p><strong>弹性盒</strong>  以下属性用在父元素中</p><p>弹性盒内的子元素是行内元素的话会转换成块元素</p><p>对子元素的子元素不生效</p><p><strong>display:flex</strong><strong>;</strong>   </p><p>子元素默认情况下横向显示</p><p><strong>display：inline-flex；</strong></p><p>行内弹性盒</p><p><strong>主轴对齐方式</strong></p><p><strong>justify-content</strong>:flex-start;    开头</p><p><img src="https://img.yangcc.top/lmq/image-20220610114320-i1y3x1d.png" alt="image.png"></p><p>justify-content:flex-end;   尾部</p><p><img src="https://img.yangcc.top/lmq/image-20220610114252-lvcgfby.png" alt="image.png"></p><p>justify-content:center;   中间</p><p><img src="https://img.yangcc.top/lmq/image-20220610113947-eh8jqa5.png" alt="image.png"></p><p>justify-content:space-between;    空间分布在元素中间 </p><p> <img src="https://img.yangcc.top/lmq/image-20220610113832-0ofebkd.png" alt="image.png"></p><p>justify-content:space-around;   空间分布在元素两边</p><p><img src="https://img.yangcc.top/lmq/image-20220610113852-n3r2sr9.png" alt="image.png"></p><p>justify-content:space-evenly;   空间平均分布</p><p><img src="https://img.yangcc.top/lmq/image-20220610113913-ip0m0an.png" alt="image.png"></p><p><strong>侧轴对齐方式</strong></p><p>align-items:flex-start</p><p><img src="https://img.yangcc.top/lmq/image-20220610114149-fi8749o.png" alt="image.png"></p><p>align-items:flex-end</p><p><img src="https://img.yangcc.top/lmq/image-20220610114043-gmj1sms.png" alt="image.png"></p><p>align-items:center</p><p><img src="https://img.yangcc.top/lmq/image-20220610114104-f4qat6f.png" alt="image.png"></p><p>baseline</p><p>行内元素文字基线对齐</p><p><strong>flex-direction:;</strong>      主轴方向</p><p>row 横向 默认值     reverse</p><p>column 竖向</p><p><strong>flex-wrap：</strong>； 换行    reverse</p><p>no-wrap； 默认   不换行</p><p><img src="https://img.yangcc.top/lmq/image-20220610135553-04oz7h1.png" alt="image.png"></p><p>wrap  换行</p><p><img src="https://img.yangcc.top/lmq/image-20220610135511-kalqf2y.png" alt="image.png"></p><p><strong>align-content：；</strong> 行与行之间的对齐方式   多轴对齐方式</p><p>flex-start   开头</p><p><img src="https://img.yangcc.top/lmq/image-20220610123321-x0lwv3u.png" alt="image.png"></p><p>flex-end   尾部</p><p><img src="https://img.yangcc.top/lmq/image-20220610123352-0spn9va.png" alt="image.png"></p><p>center  中间</p><p><img src="https://img.yangcc.top/lmq/image-20220610123419-v2wrfyu.png" alt="image.png"></p><p>space-between  空间分布在元素中间</p><p><img src="https://img.yangcc.top/lmq/image-20220610123440-ru6bglo.png" alt="image.png"></p><p>space-around  空间分布在元素两边</p><p><img src="https://img.yangcc.top/lmq/image-20220610135311-wjj40mq.png" alt="image.png"></p><p><strong>例：</strong></p><p><img src="https://img.yangcc.top/lmq/image-20220610122537-a8ty2l0.png" alt="image.png"><img src="assets/image-20220610122815-fpw0ypd.png" alt="image.png"><img src="https://img.yangcc.top/lmq/image-20220610122403-nc8pfda.png" alt="image.png"></p><p><img src="https://img.yangcc.top/lmq/image-20220610145046-imofmbo.png" alt="image.png"></p><p><img src="https://img.yangcc.top/lmq/image-20220610145239-ffbpcae.png" alt="image.png"></p><h3 id="以下属性写在子元素里"><a href="#以下属性写在子元素里" class="headerlink" title="以下属性写在子元素里"></a><strong>以下属性写在子元素里</strong></h3><p><strong>align-self</strong> <strong>：；</strong> 某元素的对齐方式（侧轴）</p><pre><code class="hljs">               flex-start               flex-end               center</code></pre><p><strong>order：；</strong> 子元素排列顺序</p><p>0   默认值</p><p>1  往后</p><p>-1 往前</p><p><strong>flex-grow ：；</strong> 生长  分配剩余空间   默认为0</p><p><strong>flex-shrink ：；</strong> 压缩 收缩   元素空间收缩   默认为1</p><p><strong>flex-basis：；</strong>为元素分配空间  默认为auto</p><p><strong>flex：none；</strong> 默认值</p><p><strong>flex：1；</strong>   相当于   flex-grow：1；  用于平均分配剩余空间（导航元素空间一致）</p><p><strong>flex：auto</strong>；   适用于nav中文字不一致，文字间距一样   此时不写a的宽度</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>css</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>css</tag>
+      
+      <tag>弹性盒</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2022/06/19/hello-world/"/>
     <url>/2022/06/19/hello-world/</url>
